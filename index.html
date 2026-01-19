@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Instaling Helper</title>
+</head>
+<body>
+    <header>
+        <h1>Instaling Helper</h1>
+    </header>
+    <div class="block">
+        <h2>Instaling</h2>
+        <div class="box">
+            <h3>1. Tampermonkey</h3>
+            <p>Install the <a href="https://www.tampermonkey.net/">tampermonkey</a> extension in your browser.</p>
+            <h3>2. Script</h3>
+            <p>Copy the code block below and paste it into the tampermonkey extension's workspace.</p>
+            <br>
+            <div id="ih-script">
+                <pre><code>// ==UserScript==
+// @name         Instaling
+// @namespace    http://tampermonkey.net/
+// @version      1.0.0
+// @description  Instaling auto complite
+// @author       MrAbsurd
+// @include      https://instaling.pl/ling2/html_app/app.php*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=instaling.pl
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @require      https://raw.githubusercontent.com/MrAbsurdick/InstalingHelper/refs/heads/main/instaling.user.js
+// ==/UserScript==</code></pre>
+                <button>Copy</button>
+            </div>
+            <br>
+            <h3>3. Ready!</h3>
+        </div>
+    </div>
+
+
+    <div class="block">
+        <h2>License Agreement and Disclaimer</h2>
+        <div class="warning"><strong>⚠️ Important:</strong> Please read this disclaimer carefully before using the script.</div>
+        <div class="box">
+            <p>By purchasing, activating, or using an activation key for the <strong>Instaling Helper</strong> script, you acknowledge and agree to the following terms:</p>
+            <hr>
+            <h3>1. Nature of the Product</h3>
+            <p>The product being sold is a <strong>license key</strong> providing access to a software script. It does not constitute a guarantee of performance, availability, or results.</p>
+            <h3>2. No Warranty</h3>
+            <p>The script and activation keys are provided <strong>“as is”</strong>, without warranties of any kind, express or implied, including but not limited to fitness for a particular purpose, reliability, or uninterrupted operation.</p>
+            <h3>3. Limitation of Liability</h3>
+            <p>Under no circumstances shall the author be held liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use the script, including but not limited to:</p>
+            <ul>
+                <li>account suspension or banning</li>
+                <li>loss of access to third-party services</li>
+                <li>data loss</li>
+                <li>violation of third-party terms of service</li>
+                <li>financial or reputational damages</li>
+            </ul>
+            <h3>4. Third-Party Services</h3>
+            <p>The script may interact with third-party websites or services, including <strong>instaling.pl</strong>.</p>
+            <p>The author is not affiliated with, endorsed by, or connected to any third-party service. Compliance with all applicable rules and terms of service is the sole responsibility of the user.</p>
+            <h3>5. User Responsibility</h3>
+            <p>All actions performed by the script are executed on behalf of the user. The user assumes full responsibility for any consequences resulting from its use.</p>
+            <h3>6. Educational Purpose</h3>
+            <p>The script is provided primarily for educational and informational purposes, including the study of JavaScript, Tampermonkey, and browser automation.</p>
+            <h3>7. License Revocation</h3>
+            <p>The author reserves the right to revoke, suspend, or terminate any activation key or license at any time in case of:</p>
+            <ul>
+                <li>abuse</li>
+                <li>violation of these terms</li>
+                <li>attempts to bypass activation</li>
+                <li>redistribution or resale of keys</li>
+            </ul>
+            <h3>8. No Refund Policy</h3>
+            <p>All purchases of activation keys are final and non-refundable, unless otherwise required by applicable law.</p>
+            <h3>9. Modifications</h3>
+            <p>The author reserves the right to modify these terms, the script, or its functionality at any time without prior notice.</p>
+            <h3>10. Acceptance of Terms</h3>
+            <p>By purchasing, activating, or using the script, you confirm that you:</p>
+            <ul>
+                <li>have read and understood this agreement</li>
+                <li>accept all risks associated with using the script</li>
+                <li>agree to be bound by these terms in full</li>
+            </ul>
+        </div>
+    </div>
+    <div class="block">
+        <h2>Contact</h2>
+        <ul>
+            <li><strong>Github</strong>: <a href="https://github.com/MrAbsurdick">@MrAbsurdick</a></li>
+            <li><strong>Discord</strong>: @mrabsurdick</li>
+            <li><strong>Telegram Blog</strong>: <a href="https://t.me/MrAbsurdBlog">t.me/MrAbsurdBlog</a></li>
+            <li><strong>Instagram</strong>: <a href="https://www.instagram.com/mr.absurdick">@mr.absurdick</a></li>
+        </ul>
+    </div>
+    <hr>
+    <footer>
+        <p>© 2026 <strong>MrAbsurd</strong> — Instaling Helper</p>
+        
+    </footer>
+
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("ih-script");
+    const button = container.querySelector("button");
+    const codeBlock = container.querySelector("pre code");
+
+    button.addEventListener("click", async () => {
+        try {
+            await navigator.clipboard.writeText(codeBlock.textContent);
+            button.textContent = "Copied!";
+            setTimeout(() => {
+                button.textContent = "Copy";
+            }, 1500);
+        } catch (err) {
+            console.error("Copy failed:", err);
+            button.textContent = "Error";
+        }
+    });
+});
+</script>
+
+</html>
