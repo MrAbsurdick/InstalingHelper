@@ -91,3 +91,6 @@ hr{
 a{
     color: burlywood;
 }
+video{
+    max-width: 100%;
+}
