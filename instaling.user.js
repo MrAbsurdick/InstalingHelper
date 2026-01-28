@@ -5,6 +5,7 @@
 // @description  Instaling auto complite
 // @author       MrAbsurd
 // @include      https://instaling.pl/ling2/html_app/app.php*
+// @include      https://instaling.pl/app/session/app.php*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=instaling.pl
 // @grant        GM_getValue
 // @grant        GM_setValue
