@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Instaling
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/MrAbsurdick/InstalingHelper/
 // @version      1.4.0
 // @description  Instaling auto complite
 // @author       MrAbsurd
