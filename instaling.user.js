@@ -9,8 +9,8 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=instaling.pl
 // @grant        GM_getValue
 // @grant        GM_setValue
-// @updateURL    https://raw.githubusercontent.com/MrAbsurdick/InstalingHelper/main/instaling.user.js
-// @downloadURL  https://raw.githubusercontent.com/MrAbsurdick/InstalingHelper/main/instaling.user.js
+// @updateURL    https://raw.githubusercontent.com/MrAbsurdick/InstalingHelper/tm/instaling.user.js
+// @downloadURL  https://raw.githubusercontent.com/MrAbsurdick/InstalingHelper/tm/instaling.user.js
 // ==/UserScript==
 (function() {
   'use strict';
