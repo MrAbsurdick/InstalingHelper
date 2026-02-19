@@ -1,3 +1,4 @@
+# [Guide link](https://mrabsurdick.github.io/InstalingHelper/)
 # 🔐 Instaling Helper – License & Disclaimer
 
 ## License Agreement and Disclaimer
